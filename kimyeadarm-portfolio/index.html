@@ -1,0 +1,787 @@
+<title>Kim Yea Darm — Brand eXperience Designer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="김예닮 | BX Designer · 온·오프라인을 아우르는 브랜드 경험 디자이너 — Selected work 2021–2026.">
+<meta name="theme-color" content="#0A0B0E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kim Yea Darm — Brand eXperience Designer">
+<meta property="og:description" content="온·오프라인을 아우르는 브랜드 경험 디자이너 김예닮의 포트폴리오. Selected work 2021—2026.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0B0E'/%3E%3Crect x='9' y='9' width='14' height='14' fill='%23053EFF'/%3E%3C/svg%3E">
+<style>
+/* System
+   Colour : PDF identity — #053EFF + #FFFFFF on cool dark.
+   Grid   : 12 col. Index column 1–3, content 4–12, on every section.
+   Type   : Pretendard. 44 / 28 / 21 / 17 / 14 / 12.
+   Space  : 8px base — 8 · 16 · 24 · 32 · 48 · 64 · 96 · 128. */
+@font-face{
+  font-family:'Pretendard';
+  src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),
+      url('fonts/PretendardVariable.woff2') format('woff2');
+  font-weight:45 920; font-style:normal; font-display:swap;
+}
+:root{
+  --bg:#0A0B0E;
+  --bg-2:#14161B;
+  --bg-3:#1B1D23;
+  --fg:#FFFFFF;
+  /* opacity ladder — 100 title·data / 72 reading / 50 support / 34 meta / 14 inactive */
+  --fg-2:rgba(255,255,255,.72);
+  --fg-m:rgba(255,255,255,.50);
+  --fg-3:rgba(255,255,255,.34);
+  --fg-4:rgba(255,255,255,.14);
+  --line:rgba(255,255,255,.08);
+  --fill:rgba(255,255,255,.07);
+  --fill-2:rgba(255,255,255,.13);
+  --blue:#053EFF;
+  --blue-hi:#2A5BFF;
+  --blue-t:rgba(5,62,255,.18);
+  --grad:linear-gradient(160deg,rgba(5,62,255,.24),rgba(5,62,255,.06) 62%),var(--bg-2);
+  --sans:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --t-mega:clamp(56px,10.5vw,176px);
+  --t-display:clamp(44px,4.8vw,76px);
+  --t-head:clamp(28px,2.8vw,44px);
+  --t-num:clamp(36px,3.2vw,48px);
+  --t-sub:clamp(22px,1.9vw,28px);
+  --t-title:clamp(18px,1.3vw,21px);
+  --t-body:clamp(15px,1.05vw,17px);
+  --t-small:14px;
+  --t-cap:12px;
+  --r-pill:980px;
+  --r:18px;
+  --r-m:10px;
+  --m:clamp(20px,3vw,48px);
+  --g:clamp(12px,1.25vw,20px);
+  --sec:clamp(96px,9vw,144px);
+  --row:clamp(64px,6vw,96px);
+  --pad:clamp(20px,2vw,28px);
+  --head:60px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:var(--sans);font-size:var(--t-body);line-height:1.65;letter-spacing:-0.012em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;word-break:keep-all;overflow-wrap:break-word;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;letter-spacing:inherit;text-align:left}
+:focus-visible{outline:2px solid var(--blue-hi);outline-offset:3px}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{list-style:none;padding:0}
+.num{font-variant-numeric:tabular-nums}
+.wrap{padding-left:max(var(--m),env(safe-area-inset-left,0px));padding-right:max(var(--m),env(safe-area-inset-right,0px))}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--g)}
+.cap{font-size:var(--t-cap);line-height:1.45;letter-spacing:0;color:var(--fg-3)}
+.small{font-size:var(--t-small);line-height:1.6;letter-spacing:-0.005em;color:var(--fg-m)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;line-height:1;letter-spacing:0;color:var(--fg-m)}
+.mark{width:8px;height:8px;background:var(--blue);flex:none}
+
+/* components */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:44px;padding:0 22px;border-radius:var(--r-pill);
+  font-size:15px;font-weight:500;line-height:1;letter-spacing:-0.01em;white-space:nowrap;
+  transition:background .25s var(--ease),color .25s var(--ease),transform .25s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn.sm{height:32px;padding:0 15px;font-size:13px}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:hover{background:var(--blue-hi)}
+.btn.ghost{background:var(--fill);color:var(--fg)}
+.btn.ghost:hover{background:var(--fill-2)}
+.btn .ic{font-size:1.05em;line-height:1;transition:transform .25s var(--ease)}
+.btn:hover .ic.r{transform:translateX(2px)}
+.btn:hover .ic.ne{transform:translate(1px,-1px)}
+.btn:hover .ic.dn{transform:translateY(2px)}
+.chip{display:inline-flex;align-items:center;height:30px;padding:0 13px;border-radius:var(--r-pill);background:var(--fill);font-size:13px;font-weight:500;line-height:1;color:rgba(255,255,255,.86);letter-spacing:-0.005em;white-space:nowrap}
+.chip.ai{background:var(--blue-t);color:#CBD6FF}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.seg{display:inline-flex;padding:3px;border-radius:var(--r-pill);background:var(--fill)}
+.seg button{height:30px;padding:0 15px;border-radius:var(--r-pill);font-size:13px;font-weight:500;line-height:1;color:var(--fg-m);transition:background .3s var(--ease),color .25s}
+.seg button:hover{color:var(--fg)}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.badge{display:inline-flex;align-items:center;justify-content:center;height:20px;min-width:20px;padding:0 8px;border-radius:var(--r-pill);background:var(--blue);color:#fff;font-size:11px;font-weight:600;line-height:1;letter-spacing:0}
+.badge.mute{background:var(--fill);color:var(--fg-2)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+
+/* header */
+.hd{position:fixed;top:0;left:0;right:0;z-index:40;padding-top:env(safe-area-inset-top,0px);background:rgba(10,11,14,.72);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}
+.hd-in{height:var(--head);display:flex;justify-content:space-between;align-items:center;gap:var(--g)}
+.logo{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600;letter-spacing:-0.02em;line-height:1}
+.logo .mark{width:10px;height:10px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a.t{font-size:13px;line-height:1;color:var(--fg-m);transition:color .25s}
+.nav a.t:hover,.nav a.t.on{color:var(--fg)}
+.prog{position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line)}
+.prog i{display:block;height:2px;margin-top:-.5px;width:100%;background:var(--fg);transform-origin:0 50%;transform:scaleX(0)}
+
+/* hero */
+main{padding-top:calc(var(--head) + env(safe-area-inset-top,0px))}
+.hero{padding-top:clamp(48px,6vw,96px)}
+.mq{overflow:hidden;white-space:nowrap;font-size:var(--t-mega);font-weight:500;line-height:1;letter-spacing:-0.055em;text-transform:uppercase}
+.mq-track{display:inline-flex;align-items:center;gap:.26em;padding-right:.26em;animation:mq 42s linear infinite}
+.mq .star{width:.46em;height:.46em;color:var(--blue);flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hero-foot{display:flex;align-items:center;gap:24px;margin-top:clamp(28px,3vw,44px)}
+.hero-foot .rule{flex:1;height:1px;background:var(--line)}
+
+/* work */
+.work{padding-top:clamp(72px,7vw,112px);align-items:start;scroll-margin-top:var(--head)}
+.side{grid-column:1/4;position:sticky;top:calc(var(--head) + 40px);align-self:start;min-width:0;display:flex;flex-direction:column}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tagline{font-size:var(--t-title);font-weight:700;line-height:1.4;letter-spacing:-0.025em}
+.filters{margin-top:-.16em}
+.side .flt{font-size:var(--t-display)}
+.flt{display:flex;align-items:flex-start;gap:8px;font-size:var(--t-display);font-weight:700;line-height:1.02;letter-spacing:-0.055em;color:var(--fg-4);transition:color .3s var(--ease)}
+.flt:hover{color:rgba(255,255,255,.4)}
+.flt.on{color:var(--fg)}
+.flt sup{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:var(--r-pill);font-size:11px;font-weight:600;letter-spacing:0;line-height:1;margin-top:.4em;color:var(--fg-3);background:var(--fill)}
+.flt.on sup{background:var(--blue);color:#fff}
+.side .seg{margin-top:32px;align-self:flex-start}
+
+.wall{grid-column:4/13;min-width:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px var(--g)}
+.tile{display:flex;flex-direction:column;min-width:0;width:100%}
+.tile[hidden]{display:none}
+.tile-fig{position:relative;aspect-ratio:2/3;background:var(--bg-2);overflow:hidden;border-radius:var(--r-m)}
+.tile-fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.tile:hover .tile-fig img,.tile:focus-visible .tile-fig img{transform:scale(1.04)}
+.tile-fig .btn{position:absolute;left:12px;bottom:12px;background:rgba(20,22,28,.55);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:#fff;opacity:0;transform:translateY(6px);transition:opacity .3s var(--ease),transform .4s var(--ease)}
+.tile:hover .tile-fig .btn,.tile:focus-visible .tile-fig .btn{opacity:1;transform:none}
+.tile-cap{margin-top:14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.tile-cap .t{font-size:15px;font-weight:600;line-height:1.35;letter-spacing:-0.02em}
+
+.list{grid-column:4/13;min-width:0;display:flex;flex-direction:column}
+.list[hidden]{display:none}
+.list li[hidden]{display:none}
+.lrow{display:grid;grid-template-columns:48px 32px minmax(0,1fr) auto 32px;gap:20px;align-items:center;width:100%;padding:12px;border-radius:var(--r);transition:background .25s var(--ease)}
+.lrow:hover{background:var(--bg-2)}
+.lrow img{width:48px;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:6px}
+.lrow .i{font-size:13px;color:var(--fg-3)}
+.lrow .t{font-size:var(--t-title);font-weight:600;letter-spacing:-0.025em;line-height:1.3;min-width:0}
+.lrow .t span{display:block;margin-top:4px;font-size:var(--t-small);font-weight:400;line-height:1.5;color:var(--fg-m);letter-spacing:-0.005em}
+.lrow .m{text-align:right}
+.lrow .go{width:32px;height:32px;border-radius:50%;background:var(--fill);display:grid;place-items:center;font-size:15px;color:var(--fg-2);transition:background .25s,color .25s,transform .3s var(--ease)}
+.lrow:hover .go{background:var(--fg);color:var(--bg);transform:translateX(2px)}
+
+/* index rows (About · Contact): heading in col 1–3, content in col 4–12 */
+.sec{padding-top:var(--sec);scroll-margin-top:var(--head)}
+.irow{grid-column:1/13;display:grid;grid-template-columns:subgrid;align-items:start}
+.irow{padding-top:clamp(28px,2.6vw,40px);border-top:1px solid var(--line)}
+.irow + .irow{margin-top:clamp(56px,5vw,80px)}
+.ih{grid-column:1/4;min-width:0;display:flex;flex-direction:column;gap:8px}
+.ih h2{display:flex;align-items:center;gap:10px;font-size:var(--t-title);font-weight:700;line-height:1;letter-spacing:-0.025em;margin-top:-1px}
+.ih p{margin-top:6px}
+.ih p{padding-left:18px}
+.ic-col{grid-column:4/13;min-width:0}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--g)}
+.stat{background:var(--bg-2);border-radius:var(--r);padding:var(--pad);display:flex;flex-direction:column;gap:24px;min-width:0}
+.stat .k{display:flex;justify-content:space-between;align-items:center;gap:8px;height:20px}
+.stat .n{font-size:var(--t-num);font-weight:700;line-height:1;letter-spacing:-0.05em;white-space:nowrap}
+.stat .n small{font-size:.4em;font-weight:600;margin-left:6px;letter-spacing:-0.02em;color:var(--fg-m)}
+.viz{display:flex;flex-direction:column;gap:14px;margin-top:auto}
+.bar{display:flex;gap:2px;height:6px}
+.bar i{display:block;height:100%;background:var(--fg-4);transform-origin:0 50%}
+.b1{background:var(--blue)!important}.b2{background:#5B80FF!important}.b3{background:#9DB3FF!important}.b4{background:rgba(255,255,255,.55)!important}
+.js .stat .bar i{transform:scaleX(0);transition:transform 1.2s var(--ease)}
+.js .stat.in .bar i{transform:none}
+.legend{display:grid;gap:6px}
+.legend li{display:grid;grid-template-columns:8px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13px;line-height:1.4;color:var(--fg-m)}
+.legend li b{font-weight:600;color:var(--fg)}
+.legend li i{width:8px;height:8px;border-radius:2px;background:var(--fg-4)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--g)}
+.sk{background:var(--bg-2);border-radius:var(--r);padding:var(--pad);min-width:0;display:flex;flex-direction:column;gap:16px}
+.sk.ai{grid-column:span 2;background:var(--grad)}
+.sk .hd2{display:flex;justify-content:space-between;align-items:center;gap:8px;height:24px}
+.sk h3{font-size:15px;font-weight:600;line-height:1.3;letter-spacing:-0.015em}
+
+/* experience */
+.xp{display:flex;flex-direction:column;gap:var(--g)}
+.xp li{display:grid;grid-template-columns:minmax(0,1fr) 168px 136px;gap:var(--g);align-items:center;padding:var(--pad);background:var(--bg-2);border-radius:var(--r)}
+.xp li.now{background:var(--grad)}
+.xp .co{display:flex;flex-direction:column;gap:6px;min-width:0}
+.xp .co b{display:flex;align-items:center;gap:10px;font-size:var(--t-title);font-weight:700;letter-spacing:-0.025em;line-height:1.3}
+.xp .dur{justify-self:end}
+.xp .when{font-size:var(--t-small);color:var(--fg-3)}
+
+/* contact */
+.ct-box{}
+.ct-mail{font-size:var(--t-title);font-weight:600;letter-spacing:-0.02em;line-height:1.3;user-select:all}
+.ct-actions{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+.ft{margin-top:var(--sec);padding-block:20px 32px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+.ft nav{display:flex;gap:24px}
+.ft a{transition:color .25s}
+.ft a:hover{color:var(--fg)}
+
+/* sheet */
+.sheet{position:fixed;inset:0;z-index:60;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;transform:translateY(100%);visibility:hidden;transition:transform .7s var(--ease),visibility 0s linear .7s}
+.sheet.open{transform:none;visibility:visible;transition:transform .7s var(--ease),visibility 0s}
+.sh-bar{position:sticky;top:0;z-index:3;padding-top:env(safe-area-inset-top,0px);background:rgba(10,11,14,.78);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}
+.sh-bar-in{height:var(--head);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:var(--g)}
+.sh-bar .ttl{font-size:13px;font-weight:600;line-height:1}
+.sh-bar .btn{justify-self:end}
+.sh-body{padding-top:clamp(48px,5vw,80px);max-width:1440px;margin:0 auto}
+.sh-head h2{margin-top:16px;font-size:var(--t-head);font-weight:700;line-height:1.12;letter-spacing:-0.04em}
+.sh-head .sub{margin-top:8px;font-size:var(--t-body);color:var(--fg-m);line-height:1.5}
+.facts{margin-top:32px;padding:var(--pad);background:var(--bg-2);border-radius:var(--r);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px var(--g)}
+.facts dt{margin-bottom:6px}
+.facts dd{font-size:15px;line-height:1.5;font-weight:500}
+.facts .tools{grid-column:1/-1;padding-top:20px;border-top:1px solid var(--line)}
+.facts .tools dd{display:flex;flex-wrap:wrap;gap:8px}
+.steps{margin-top:var(--g);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--g)}
+.step{background:var(--bg-2);border-radius:var(--r);padding:var(--pad);display:flex;flex-direction:column;gap:16px;min-width:0}
+.step.res{background:var(--grad)}
+.lb{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;line-height:1;letter-spacing:-0.015em}
+.lb .no{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:6px;background:var(--fill);font-size:11px;font-weight:600;color:var(--fg)}
+.step.res .lb .no{background:var(--blue)}
+.step p{font-size:15px;line-height:1.75;color:var(--fg-2)}
+.step p.lb{color:var(--fg);line-height:1}
+.step .chips{margin-top:auto}
+.step .chip{height:26px;padding:0 10px;font-size:12px}
+.mets{display:flex;flex-direction:column;gap:12px}
+.mets li{display:flex;flex-direction:column;gap:2px}
+.mets b{font-size:var(--t-title);font-weight:700;line-height:1.2;letter-spacing:-0.035em}
+.mets span{font-size:13px;line-height:1.5;color:var(--fg-m)}
+.gal{margin-top:clamp(48px,5vw,80px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--g)}
+.gal figure{overflow:hidden;border-radius:var(--r-m);background:var(--bg-2);aspect-ratio:16/9}
+.gal figure.full{grid-column:1/-1}
+.gal figure.cover{aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figure.cover img{height:auto}
+.next{margin-top:clamp(64px,6vw,96px);padding-block:24px 96px;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--g);align-items:center}
+.next .t{margin-top:12px;font-size:var(--t-sub);font-weight:700;line-height:1.2;letter-spacing:-0.035em}
+.next .t span{display:block;margin-top:6px;font-size:var(--t-small);font-weight:400;color:var(--fg-m);letter-spacing:-0.005em}
+.next .acts{display:flex;gap:10px}
+
+
+/* square motif controls (menu, side tab, index) */
+.sq{width:36px;height:36px;border:1px solid rgba(255,255,255,.88);display:grid;place-items:center;color:#fff;background:rgba(10,11,14,.35);transition:background .25s var(--ease),color .25s var(--ease)}
+.sq:hover{background:#fff;color:var(--bg)}
+.sq svg{width:14px;height:14px}
+.burger span{display:flex;flex-direction:column;gap:5px}
+.burger i{display:block;width:14px;height:1px;background:currentColor;transition:transform .35s var(--ease)}
+.burger[aria-expanded="true"] i:first-child{transform:translateY(3px) rotate(45deg)}
+.burger[aria-expanded="true"] i:last-child{transform:translateY(-3px) rotate(-45deg)}
+.vtab{position:fixed;right:0;top:50%;z-index:45;transform:translateY(-50%);width:40px;padding:16px 0 18px;background:#fff;color:var(--bg);display:flex;flex-direction:column;align-items:center;gap:16px;transition:transform .35s var(--ease)}
+.vtab:hover{transform:translate(-4px,-50%)}
+.vtab .mark{width:10px;height:10px}
+.vtab span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:12px;font-weight:700;letter-spacing:.01em;line-height:1}
+.idx{position:fixed;right:2px;bottom:24px;z-index:65;width:36px;display:flex;flex-direction:column;align-items:center}
+.idx .n{font-size:11px;font-weight:600;line-height:1;color:var(--fg)}
+.idx .n.t{color:var(--fg-3)}
+.idx .ln{width:1px;height:20px;margin:7px 0;background:var(--fg-3)}
+.idx .bts{margin-top:14px;display:flex;flex-direction:column}
+.idx .bts .sq + .sq{margin-top:-1px}
+.menu{position:fixed;inset:0;z-index:80;background:var(--bg);display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility 0s linear .4s}
+.menu.open{opacity:1;visibility:visible;transition:opacity .4s var(--ease),visibility 0s}
+.menu .hd-in{border-bottom:1px solid var(--line)}
+.menu ol{flex:1;display:flex;flex-direction:column;justify-content:center}
+.menu li a{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:baseline;gap:var(--g);padding-block:clamp(14px,1.6vw,22px);border-bottom:1px solid var(--line);transition:color .25s}
+.menu li:first-child a{border-top:1px solid var(--line)}
+.menu li a .i{font-size:12px;font-weight:600;color:var(--fg-3)}
+.menu li a b{font-size:var(--t-head);font-weight:700;line-height:1.05;letter-spacing:-0.045em;color:var(--fg-3);transition:color .3s var(--ease)}
+.menu li a:hover b{color:var(--fg)}
+.menu .mf{padding-block:24px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+.menu .mf .chips a{transition:background .25s}
+.menu .mf .chips a:hover{background:var(--fill-2)}
+.menu .js-in{opacity:0;transform:translateY(12px);transition:opacity .5s var(--ease),transform .6s var(--ease)}
+.menu.open .js-in{opacity:1;transform:none}
+.menu.open li:nth-child(2) .js-in{transition-delay:.05s}.menu.open li:nth-child(3) .js-in{transition-delay:.1s}
+@media (max-width:1279px){.vtab{display:none}}
+@media (max-width:900px){.idx{display:none}}
+
+/* responsive */
+@media (max-width:1180px){
+  .wall{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sk.ai{grid-column:1/-1}
+}
+@media (max-width:900px){
+  :root{--head:56px}
+  .side{grid-column:1/13;position:static;margin-bottom:40px}
+  .filters{display:flex;flex-wrap:wrap;gap:4px 24px;margin-top:28px}
+  .flt{font-size:44px}
+  .wall,.list{grid-column:1/13}
+  .irow{display:flex;flex-direction:column;gap:24px}
+  .stats,.steps{grid-template-columns:1fr}
+  .xp li{grid-template-columns:minmax(0,1fr) auto}
+  .xp .when{display:none}
+  .sh-bar .ttl{display:none}
+  .sh-bar-in{grid-template-columns:1fr auto}
+}
+/* tablet — 620~900px */
+@media (min-width:621px) and (max-width:900px){
+  .wall{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats .stat:last-child{grid-column:1/-1}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .next{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:620px){
+  .filters{gap:0 14px}
+  .side .flt{font-size:clamp(28px,8.6vw,36px);gap:4px}
+  .flt sup{height:18px;padding:0 6px;font-size:10px}
+  .nav a.t{display:none}
+  .hero-foot .rule,.hero-foot .yr{display:none}
+  .wall{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}
+  .lrow{grid-template-columns:44px minmax(0,1fr) 32px;gap:14px}
+  .lrow img{width:44px}
+  .lrow .i,.lrow .m{display:none}
+  .skills{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr}
+  .next{grid-template-columns:1fr}
+  .xp li{grid-template-columns:1fr;gap:12px}
+  .xp .dur{justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none}
+  .js .stat .bar i{transform:none}
+}
+</style>
+
+<header class="hd" id="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top"><i class="mark" aria-hidden="true"></i>Kim Yea Darm</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="t" href="#work" data-sec="work">Work</a>
+      <a class="t" href="#about" data-sec="about">About</a>
+      <a class="btn sm primary" href="#contact">Contact</a>
+      <button class="sq burger" id="menuBt" type="button" aria-expanded="false" aria-controls="menu" aria-label="메뉴 열기"><span><i></i><i></i></span></button>
+    </nav>
+  </div>
+  <div class="prog" aria-hidden="true"><i id="prog"></i></div>
+</header>
+
+<main id="top">
+  <section class="hero" data-sec="top" aria-label="Intro">
+    <div class="mq" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
+    <div class="wrap hero-foot"><span class="small">Brand eXperience Designer</span><span class="rule"></span><span class="cap num yr">©2026</span></div>
+  </section>
+
+  <section class="work wrap grid" id="work" data-sec="work" aria-label="Work">
+    <aside class="side">
+      <h1 class="sr">김예닮 — Brand eXperience Designer</h1>
+      <ul class="filters" id="filters" role="tablist" aria-label="카테고리"></ul>
+      <div class="seg" role="group" aria-label="보기 방식">
+        <button type="button" aria-pressed="true" data-view="grid">Grid</button>
+        <button type="button" aria-pressed="false" data-view="list">List</button>
+      </div>
+    </aside>
+    <div class="wall" id="wall"></div>
+    <ol class="list" id="list" hidden></ol>
+  </section>
+
+  <section class="sec wrap grid" id="about" data-sec="about" aria-label="About">
+    <div class="irow">
+      <div class="ih rv"><h2><i class="mark" aria-hidden="true"></i>Experience</h2></div>
+      <ul class="ic-col xp num">
+        <li class="now rv"><div class="co"><b>카카오VX<span class="badge">재직 중</span></b><span class="small">대기업 계열사 · AI부스트 디자인팀 BX 디자이너</span></div><span class="cap when">2023.07 — 현재</span><span class="dur chip">3년 4개월</span></li>
+        <li class="rv"><div class="co"><b>대명소노그룹</b><span class="small">대기업 본사 · 기획디자인팀 브랜드 디자이너</span></div><span class="cap when">2021.05 — 2023.06</span><span class="dur chip">2년 1개월</span></li>
+      </ul>
+    </div>
+
+    <div class="irow">
+      <div class="ih rv"><h2><i class="mark" aria-hidden="true"></i>Impact in numbers</h2><p class="small">숫자로 증명해 온 브랜드 경험</p></div>
+      <div class="ic-col stats num">
+        <article class="stat rv">
+          <div class="k"><span class="eyebrow">총 매출 기여</span><span class="badge">Revenue</span></div>
+          <p class="n">34<small>억 원</small></p>
+          <div class="viz">
+            <div class="bar" aria-hidden="true"><i class="b1" style="flex:14"></i><i class="b2" style="flex:2.97"></i><i class="b3" style="flex:2"></i><i class="b4" style="flex:1.04"></i><i style="flex:13.99"></i></div>
+            <ul class="legend"><li><i class="b1"></i>Cloud Nine<b>14억</b></li><li><i class="b2"></i>Costco Gift Set<b>2.97억</b></li><li><i class="b3"></i>R3V Hands-up<b>2억</b></li><li><i class="b4"></i>Happy Buddy Day<b>1.04억</b></li></ul>
+          </div>
+        </article>
+        <article class="stat rv">
+          <div class="k"><span class="eyebrow">누적 판매 수량</span><span class="badge">Units</span></div>
+          <p class="n">80,300<small>개</small></p>
+          <div class="viz">
+            <div class="bar" aria-hidden="true"><i class="b1" style="flex:15000"></i><i class="b2" style="flex:10000"></i><i class="b3" style="flex:6200"></i><i class="b4" style="flex:3500"></i><i style="flex:45600"></i></div>
+            <ul class="legend"><li><i class="b1"></i>Cloud Nine<b>15,000</b></li><li><i class="b2"></i>Costco Gift Set<b>10,000</b></li><li><i class="b3"></i>R3V Hands-up<b>6,200</b></li><li><i class="b4"></i>Happy Buddy Day<b>3,500</b></li></ul>
+          </div>
+        </article>
+        <article class="stat rv">
+          <div class="k"><span class="eyebrow">브랜드 디자인 경력</span><span class="badge">Career</span></div>
+          <p class="n">5<small>년+</small></p>
+          <div class="viz">
+            <div class="bar" aria-hidden="true"><i class="b3" style="flex:25"></i><i class="b1" style="flex:40"></i></div>
+            <ul class="legend"><li><i class="b3"></i>대명소노그룹<b>2년 1개월</b></li><li><i class="b1"></i>카카오VX · 재직 중<b>3년 4개월</b></li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="irow">
+      <div class="ih rv"><h2><i class="mark" aria-hidden="true"></i>Skill tree</h2></div>
+      <div class="ic-col skills">
+        <div class="sk ai rv">
+          <div class="hd2"><h3>AI Tools</h3><span class="badge">Core</span></div>
+          <div class="chips"><span class="chip ai">Midjourney</span><span class="chip ai">Adobe Firefly</span><span class="chip ai">Magnific</span><span class="chip ai">Kling</span><span class="chip ai">Seedance</span><span class="chip ai">Claude</span><span class="chip ai">Figma Make</span></div>
+        </div>
+        <div class="sk rv">
+          <div class="hd2"><h3>Brand &amp; Package</h3></div>
+          <div class="chips"><span class="chip">Illustrator</span><span class="chip">Photoshop</span><span class="chip">InDesign</span><span class="chip">Procreate</span></div>
+        </div>
+        <div class="sk rv">
+          <div class="hd2"><h3>UI / GUI</h3></div>
+          <div class="chips"><span class="chip">Figma</span><span class="chip">Paper</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sec wrap grid" id="contact" data-sec="contact" aria-label="Contact">
+    <div class="irow">
+      <div class="ih rv"><h2><i class="mark" aria-hidden="true"></i>Contact</h2></div>
+      <div class="ic-col ct-box rv">
+        <p class="ct-mail" id="mail">yedarm15@naver.com</p>
+        <div class="ct-actions">
+          <button class="btn primary" id="copyMail" type="button">이메일 복사</button>
+          <a class="btn ghost" id="pdfBt" href="kimyeadarm-portfolio.pdf" download="김예닮_포트폴리오.pdf">포트폴리오 PDF <span class="ic dn">↓</span></a>
+          <a class="btn ghost" href="kimyeadarm-resume.pdf" download="김예닮_경력기술서.pdf">경력기술서 PDF <span class="ic dn">↓</span></a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/%EC%98%88%EB%8B%AE-%EA%B9%80-005b56351/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">LinkedIn <span class="ic ne">↗</span></a>
+          <a class="btn ghost" href="https://www.behance.net/ye-darm" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Behance <span class="ic ne">↗</span></a>
+          <a class="btn ghost" href="https://www.instagram.com/ruth_zip" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Instagram <span class="ic ne">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="ft wrap cap num"><span>© 2026 Kim Yea Darm</span><nav aria-label="바로가기"><a href="#work">Work</a><a href="#about">About</a><a href="#top">Top</a></nav></footer>
+</main>
+
+
+<div class="idx num" id="idx" aria-label="위치">
+  <span class="n" id="idxC">01</span><span class="ln" aria-hidden="true"></span><span class="n t" id="idxT">04</span>
+  <div class="bts">
+    <button class="sq" id="idxUp" type="button" aria-label="이전"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9l4-4 4 4"/></svg></button>
+    <button class="sq" id="idxDn" type="button" aria-label="다음"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 5l4 4 4-4"/></svg></button>
+  </div>
+</div>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="메뉴" aria-hidden="true">
+  <div class="wrap hd-in"><a class="logo" href="#top" data-go><i class="mark" aria-hidden="true"></i>Kim Yea Darm</a><button class="sq burger" id="menuX" type="button" aria-expanded="true" aria-label="메뉴 닫기"><span><i></i><i></i></span></button></div>
+  <ol class="wrap">
+    <li><a href="#work" data-go><span class="i num js-in">01</span><b class="js-in">Work</b><span class="small num js-in">11 Projects</span></a></li>
+    <li><a href="#about" data-go><span class="i num js-in">02</span><b class="js-in">About</b><span class="small js-in">Experience · Impact · Skills</span></a></li>
+    <li><a href="#contact" data-go><span class="i num js-in">03</span><b class="js-in">Contact</b><span class="small js-in">yedarm15@naver.com</span></a></li>
+  </ol>
+  <div class="wrap mf"><span class="cap">© 2026 Kim Yea Darm</span><div class="chips"><a class="chip" href="https://www.linkedin.com/in/%EC%98%88%EB%8B%AE-%EA%B9%80-005b56351/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">LinkedIn ↗</a><a class="chip" href="https://www.behance.net/ye-darm" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Behance ↗</a><a class="chip" href="https://www.instagram.com/ruth_zip" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Instagram ↗</a></div></div>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shTitle" aria-hidden="true">
+  <div class="sh-bar"><div class="wrap sh-bar-in">
+    <span class="cap num" id="shIdx"></span>
+    <span class="ttl" id="shTtl"></span>
+    <button class="btn sm ghost" id="shClose" type="button">닫기</button>
+  </div><div class="prog" aria-hidden="true"><i id="shProg"></i></div></div>
+  <div id="shContent"></div>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(() => {
+const MANIFEST = {"mamathira":{"thumb":"mamathira-thumb.webp","hero":"mamathira-hero.webp","gal":[["mamathira-01.webp",1440,810],["mamathira-02.webp",1440,810],["mamathira-03.webp",1440,810],["mamathira-04.webp",1440,1111],["mamathira-05.webp",1440,810],["mamathira-06.webp",1440,810],["mamathira-07.webp",1440,810],["mamathira-08.webp",1440,810],["mamathira-09.webp",1440,810],["mamathira-10.webp",1440,810],["mamathira-11.webp",1440,810],["mamathira-12.webp",1440,810],["mamathira-13.webp",1440,810]],"cover_p":"cover-mamathira-p.webp","cover_l":"cover-mamathira-l.webp","gal2":[["mamathira-p04.webp",1440,810],["mamathira-p05.webp",1440,810],["mamathira-p06.webp",1440,810],["mamathira-p07.webp",1440,810],["mamathira-p08.webp",1440,810],["mamathira-p09.webp",1440,810],["mamathira-p10.webp",1440,810],["mamathira-p11.webp",1440,810],["mamathira-p12.webp",1440,810],["mamathira-p13.webp",1440,810],["mamathira-p14.webp",1440,810],["mamathira-p15.webp",1440,810],["mamathira-p16.webp",1440,810],["mamathira-p17.webp",1440,810]]},"bhind":{"thumb":"bhind-thumb.webp","hero":"bhind-hero.webp","gal":[["bhind-01.webp",1440,810],["bhind-02.webp",1440,810],["bhind-03.webp",1440,810],["bhind-04.webp",1440,1111],["bhind-05.webp",1440,810],["bhind-06.webp",1440,810]],"cover_p":"cover-bhind-p.webp","cover_l":"cover-bhind-l.webp","gal2":[["bhind-p18.webp",1440,810],["bhind-p19.webp",1440,810],["bhind-p20.webp",1440,810],["bhind-p21.webp",1440,810],["bhind-p22.webp",1440,810],["bhind-p23.webp",1440,810],["bhind-p24.webp",1440,810]]},"light":{"thumb":"light-thumb.webp","hero":"light-hero.webp","gal":[["light-01.webp",1440,810],["light-02.webp",1440,810],["light-03.webp",1440,1111],["light-04.webp",1440,810]],"cover_p":"cover-light-p.webp","cover_l":"cover-light-l.webp","gal2":[["light-p25.webp",1440,810],["light-p26.webp",1440,810],["light-p27.webp",1440,810],["light-p28.webp",1440,810],["light-p29.webp",1440,810]]},"cloudnine":{"thumb":"cloudnine-thumb.webp","hero":"cloudnine-hero.webp","gal":[["cloudnine-01.webp",1440,810],["cloudnine-02.webp",1440,810],["cloudnine-03.webp",1440,1111],["cloudnine-04.webp",1440,810],["cloudnine-05.webp",1440,810]],"cover_p":"cover-cloudnine-p.webp","cover_l":"cover-cloudnine-l.webp","gal2":[["cloudnine-p31.webp",1440,810],["cloudnine-p32.webp",1440,810],["cloudnine-p33.webp",1440,810],["cloudnine-p34.webp",1440,810],["cloudnine-p35.webp",1440,810],["cloudnine-p36.webp",1440,810]]},"costco":{"thumb":"costco-thumb.webp","hero":"costco-hero.webp","gal":[["costco-01.webp",1440,810],["costco-02.webp",1440,1111],["costco-03.webp",1440,810]],"cover_p":"cover-costco-p.webp","cover_l":"cover-costco-l.webp","gal2":[["costco-p37.webp",1440,810],["costco-p38.webp",1440,810],["costco-p39.webp",1440,810],["costco-p40.webp",1440,810]]},"dragon":{"thumb":"dragon-thumb.webp","hero":"dragon-hero.webp","gal":[["dragon-01.webp",1440,810],["dragon-02.webp",1440,1111],["dragon-03.webp",1440,810]],"cover_p":"cover-dragon-p.webp","cover_l":"cover-dragon-l.webp","gal2":[["dragon-p41.webp",1440,810],["dragon-p42.webp",1440,810],["dragon-p43.webp",1440,810],["dragon-p44.webp",1440,810]]},"favorite":{"thumb":"favorite-thumb.webp","hero":"favorite-hero.webp","gal":[["favorite-01.webp",1440,810],["favorite-02.webp",1440,1111],["favorite-03.webp",1440,810],["favorite-04.webp",1440,810]],"cover_p":"cover-favorite-p.webp","cover_l":"cover-favorite-l.webp","gal2":[["favorite-p45.webp",1440,810],["favorite-p46.webp",1440,810],["favorite-p47.webp",1440,810],["favorite-p48.webp",1440,810],["favorite-p49.webp",1440,810]]},"hbd":{"thumb":"hbd-thumb.webp","hero":"hbd-hero.webp","gal":[["hbd-01.webp",1440,810],["hbd-02.webp",1440,1111],["hbd-03.webp",1440,810]],"cover_p":"cover-hbd-p.webp","cover_l":"cover-hbd-l.webp","gal2":[["hbd-p50.webp",1440,810],["hbd-p51.webp",1440,810],["hbd-p52.webp",1440,810],["hbd-p53.webp",1440,810]]},"r3v":{"thumb":"r3v-thumb.webp","hero":"r3v-hero.webp","gal":[["r3v-01.webp",1440,810],["r3v-02.webp",1440,1111],["r3v-03.webp",1440,810],["r3v-04.webp",1440,810]],"cover_p":"cover-r3v-p.webp","cover_l":"cover-r3v-l.webp","gal2":[["r3v-p54.webp",1440,810],["r3v-p55.webp",1440,810],["r3v-p56.webp",1440,810],["r3v-p57.webp",1440,810],["r3v-p58.webp",1440,810]]},"kkinilog":{"thumb":"kkinilog-thumb.webp","hero":"kkinilog-hero.webp","gal":[["kkinilog-01.webp",1440,810],["kkinilog-02.webp",1440,1111],["kkinilog-03.webp",1440,810],["kkinilog-04.webp",1440,810],["kkinilog-05.webp",1440,810],["kkinilog-06.webp",1440,810]],"cover_p":"cover-kkinilog-p.webp","cover_l":"cover-kkinilog-l.webp","gal2":[["kkinilog-p59.webp",1440,810],["kkinilog-p60.webp",1440,810],["kkinilog-p61.webp",1440,810],["kkinilog-p62.webp",1440,810],["kkinilog-p63.webp",1440,810],["kkinilog-p64.webp",1440,810],["kkinilog-p65.webp",1440,810]]},"golf":{"thumb":"golf-thumb.webp","hero":"golf-hero.webp","gal":[["golf-01.webp",1440,810],["golf-02.webp",1440,1111],["golf-03.webp",1440,810],["golf-04.webp",1440,810],["golf-05.webp",1440,810],["golf-06.webp",1440,810]],"cover_p":"cover-golf-p.webp","cover_l":"cover-golf-l.webp","gal2":[["golf-p66.webp",1440,810],["golf-p67.webp",1440,810],["golf-p68.webp",1440,810],["golf-p69.webp",1440,810],["golf-p70.webp",1440,810],["golf-p71.webp",1440,810],["golf-p72.webp",1440,810]]}};
+const P = [
+ { id:'mamathira', en:'MAMATHIRA', ko:'대명 쏠비치 삼척 마마티라 브랜딩', cat:'Brand & Package Design', tags:['bx','pkg'], year:'2022', client:'대명소노그룹',
+   period:'2022.02 — 2022.12', role:'마마티라 브랜딩 담당 디자이너', share:'패키지·인쇄류·일러스트 100%, 사인 80%', tools:'Ai, Ps, Id, Procreate', badge:'매출 +27%',
+   head:'산토리니의 거리를 담다',
+   body:['기존 공간을 상업적 식음 공간으로 바꾼 리뉴얼 프로젝트입니다. 투자금액 대비 부진한 수익과 느린 투자금 회수율의 공간을 현장의 재해석과 리뉴얼을 통해 새로운 F&B 공간으로 제안했습니다.',
+         '산토리니의 로컬 리서치에서 도출한 동키 택시 문화를 프로젝트 스토리텔링의 코어로 설정하고, BI와 마스터 가이드라인, 사인, 패키지, 인쇄물, 일러스트까지 오프라인 접점 전반을 설계했습니다.'],
+   out:[['27%','리브랜딩 후 4개월, 전년 대비 매출 상승'],['25억','총 사업비 규모 공간 브랜딩 프로젝트'],['BI · Sign · Package','브랜드 담당 디자이너로 전 접점 총괄',1]] },
+ { id:'bhind', en:'BHIND', ko:'오션월드의 숨겨진 카페', cat:'Brand & VMD Design', tags:['bx'], year:'2021', client:'대명소노그룹',
+   period:'2021.09 — 2021.11', role:'디자인 리드', share:'컨셉 기획·카피·브랜딩 100%', tools:'Ai, Ps, Id, Procreate', badge:'Concept',
+   head:'시간이 멈춘 듯한 고요함',
+   body:['오션월드 숲속, 깊이 감춰진 공간에서 시간이 멈춘 듯한 고요함을 선사하는 카페 브랜드입니다. 몰입의 경험을 브랜드의 핵심으로 삼았습니다.',
+         '오션월드 내 비효율적이던 카바나 공간을 수익형 식음 공간으로 전환해 비발디파크의 시그니처를 만드는 공간 브랜딩 프로젝트로, 컨셉 기획부터 카피, 워드마크, 컬러 시스템, VMD까지 주도했습니다.'],
+   out:[['Space Branding','카바나 공간을 수익형 F&B 공간으로 전환',1],['100%','컨셉 기획·카피·브랜딩 단독 진행'],['VMD','사인·패키지·메뉴 등 현장 적용',1]] },
+ { id:'light', en:'Light & Fire', ko:'빛, 그리고 불 — 故 서홍송 선대 회장 추모 전시', cat:'Brand & VMD Design', tags:['bx'], year:'2021', client:'대명소노그룹',
+   period:'2021.09 — 2021.11', role:'4인 컨셉팀 프로젝트', share:'컨셉 기획·카피 100%, 그래픽 80%', tools:'Ai, Ps, Id, Procreate', badge:'Exhibition',
+   head:'닿을 수 없는 이에게 보내는 빛',
+   body:['대명그룹 선대 회장님 추모 전시회입니다. 이제는 닿을 수 없는 선대 회장님에게 우리의 모습을 빛 그리고 불에 담아 초월의 메시지를 보내는 컨셉으로 기획했습니다.',
+         '추모 대상의 생애와 업적, 그가 향했던 가치와 열정을 다시 새기는 것을 목표로 컨셉 기획과 카피라이팅을 맡았고, 파사드, 심볼, 사인, 인쇄물, 미디어, 홍보물 디자인을 총괄했습니다.'],
+   out:[['Concept & Copy','전시 컨셉 기획 및 카피라이팅 100%',1],['Facade · Media','파사드, 심볼, 사인, 미디어 디자인 총괄',1],['80%','전시 그래픽 담당 비중']] },
+ { id:'cloudnine', en:'Cloud Nine', ko:'24SS 시즌 클라우드 나인', cat:'Brand & Package Design', tags:['bx','pkg'], year:'2024', client:'카카오VX',
+   period:'2023.10 — 2024.01', role:'2인 팀 프로젝트', share:'그래픽·패키지 100%', tools:'Ai, Ps, Id, Procreate', badge:'₩14억',
+   head:'더할 나위 없이 행복한',
+   body:['‘더할 나위 없이 행복하다’는 의미를 토대로 24SS 시즌의 브랜드 컨셉 클라우드 나인을 테마로 잡았습니다. 이글, 버디, 파 같은 골프 용어를 그래픽 자산으로 만들어 골프 산업과의 연결을 강하게 설계했습니다.',
+         '기존 골프 시장의 보수적인 미학을 넘어선 시도로, 시즌 키비주얼부터 패키지, 골프백, 굿즈까지 그래픽 시스템을 전개했습니다.'],
+   out:[['₩14억','단일 프로젝트 최대 매출'],['15,000개','누적 판매 수량'],['3회','리오더 진행, 신규 컬렉션 확장']] },
+ { id:'costco', en:'Costco Gift Set', ko:'코스트코 기프트 세트 춘식이', cat:'Graphic & Package Design', tags:['pkg'], year:'2024', client:'카카오VX × 코스트코',
+   period:'2024.04 — 2024.05', role:'2인 프로젝트', share:'그래픽·패키지 100%', tools:'Ai, Ps, Id, Procreate', badge:'100% 완판',
+   head:'호수와 보름달을 담은 선물',
+   body:['코스트코와 협업한 골프 기프트 세트입니다. 다양한 춘식이 캐릭터와 청초한 호수, 보름달을 담은 패키지로 디자인했습니다.',
+         '기존 골프 선물 패키지의 획일적인 디자인과 IP 활용 부재를 극복하는 것을 목표로, 코스트코의 전국 유통망과 카카오 IP의 힘을 결합하는 협업 전략을 설계했습니다.'],
+   out:[['₩2.97억','매출'],['333개','일평균 판매량'],['1개월','출시 후 100% 완판']] },
+ { id:'dragon', en:'Chunnyong Edition', ko:'2024 춘식이 춘뇽 에디션', cat:'Graphic & Package Design', tags:['pkg'], year:'2023', client:'카카오VX',
+   period:'2023.10 — 2023.11', role:'2인 팀 프로젝트', share:'그래픽·패키지 100%', tools:'Ai, Ps, Id, Procreate', badge:'2024 Edition',
+   head:'청룡의 해를 기념하며',
+   body:['2024 신년 에디션 ‘춘뇽이’는 청룡의 해를 기념해 디자인했습니다. 청룡의 상징성과 춘식이 캐릭터의 매력을 하나의 그래픽으로 융합했습니다.',
+         '회사의 연간 동물 테마 기획에 따른 핵심 프로젝트로, 시즈널리티를 강화하고 시장 내 독점적 가치를 부여하는 데 집중했습니다.'],
+   out:[['Seasonal IP','연간 동물 테마 기획의 핵심 에디션',1],['100%','그래픽·패키지 디자인 담당'],['Character','춘식이 × 청룡 캐릭터 그래픽',1]] },
+ { id:'favorite', en:'My Favorite Edition', ko:'24FW 시즌 마이 페이보릿 에디션', cat:'Graphic & Package Design', tags:['pkg'], year:'2024', client:'카카오VX',
+   period:'2024.10 — 2024.11', role:'디자인 리드', share:'100%', tools:'Ai, Ps, Id, Procreate', badge:'24FW',
+   head:'초콜릿을 닮은 골프볼',
+   body:['24시즌 FW 프로젝트로, 춘식이 캐릭터들을 빈티지한 필기체 타이포그래피와 자유로운 그래픽으로 표현했습니다.',
+         '골프볼이 초콜릿 볼을 닮았다는 발상에서 출발해, 고가·소량 생산의 하이엔드 선물 감성으로 브랜드를 포지셔닝했습니다.'],
+   out:[['High-end Gift','하이엔드 선물 감성 포지셔닝',1],['100%','기획부터 패키지까지 전담'],['Typography','빈티지 필기체 그래픽 시스템',1]] },
+ { id:'hbd', en:'Happy Buddy Day', ko:'카카오톡 선물하기 해피 버디 데이 에디션', cat:'Graphic & Package Design', tags:['pkg'], year:'2023', client:'카카오VX',
+   period:'2023.09 — 2023.11', role:'디자인 리드', share:'100%', tools:'Ai, Ps, Id, Procreate', badge:'3,500개',
+   head:'프렌즈가 함께 축하하는 생일',
+   body:['소중한 사람을 위한 골프공 생일 키트입니다. 열렬히 환호하는 프렌즈 친구들, 라이언 볼 스탬프, 축하 메시지를 담은 생일 카드로 프렌즈가 함께 생일을 축하하는 이야기를 담았습니다.',
+         'Happy Birdie Day라는 위트 있는 컨셉과 카카오프렌즈 IP를 활용해 카카오톡 선물하기 채널에 맞춘 패키지로 설계했습니다.'],
+   out:[['₩1억 390만','매출'],['3,500개','판매 수량'],['New Channel','선물용 패키지 시장 신규 진입',1]] },
+ { id:'r3v', en:'R3V Hands-up', ko:'R3V 핸즈업 에디션 리뉴얼', cat:'Brand & Package Design', tags:['bx','pkg'], year:'2024', client:'카카오VX',
+   period:'2024.01 — 2024.03', role:'디자인 리드', share:'100%', tools:'Ai, Ps, Id, Procreate', badge:'판매 1위',
+   head:'R3 시리즈를 잇는 리뉴얼',
+   body:['기존 R3 골프공 패키지의 디자인과 성능을 리뉴얼했습니다. 춘식이 생일 기념 넘버링과 개성 있는 핸즈업 비주얼 퍼포먼스를 그래픽으로 표현했습니다.',
+         'R3 시리즈의 유산을 계승하면서 시각 언어를 현대적으로 진화시키는 것을 목표로 로고, 컬러, 패키지 시스템을 정리했습니다.'],
+   out:[['1위','패키지 전체 판매 순위'],['+22%','리뉴얼 후 판매율 상승'],['₩2억','매출 · 6,200개 판매']] },
+ { id:'kkinilog', en:'Kkinilog', ko:'카카오VX 끼니로그 헬스케어', cat:'Brand & UI/UX Design', tags:['bx','gui'], year:'2026', client:'카카오VX',
+   period:'2025.12 — 2026.03', role:'BX 담당 디자이너', share:'100%', tools:'Figma, Midjourney, Ai, Ps, Id, Procreate', badge:'BX · GUI',
+   head:'사진 한 장으로 쌓는 식습관',
+   body:['식단 기록의 단순화를 넘어 평소 습관을 데이터로 분석하고 개선하는 헬스케어 서비스입니다. 브랜드가 가진 차별화된 가치를 시각적으로 실체화했습니다.',
+         'AI 분석 데이터와 캐릭터를 결합해 딱딱한 의료 서비스를 즐거운 경험으로 바꾸는 것을 목표로, BI와 캐릭터, 앱 아이콘, GUI 컴포넌트 가이드까지 온·오프라인 브랜딩을 총괄했습니다.'],
+   out:[['BI · Character','브랜드 아이덴티티와 캐릭터 시스템',1],['GUI Guide','파운데이션과 컴포넌트 가이드 구축',1],['AI Workflow','Midjourney·Seedance 활용',1]] },
+ { id:'golf', en:'Kakao Golf', ko:'카카오골프예약 브랜드 리뉴얼', cat:'Brand & GUI Design', tags:['bx','gui'], year:'2025', client:'카카오VX',
+   period:'2024.12 — 2025.04', role:'BX 담당 디자이너', share:'100%', tools:'Figma, Ai, Ps, Id, Procreate', badge:'Renewal',
+   head:'IP에서 서비스의 신뢰로',
+   body:['기존 카카오 IP 의존에서 벗어나 골프 예약 서비스로서의 전문적 신뢰도를 강화한 리브랜딩입니다. 차별화된 정체성을 세우고 서비스 경쟁력을 높였습니다.',
+         '앱 아이콘(로고)과 그래픽 전반의 시각 요소를 개선하고, 일관된 운영을 위한 브랜드 리뉴얼 가이드북을 직접 제작했습니다.'],
+   out:[['App Icon','로고와 앱 아이콘 리디자인',1],['Guide Book','브랜드 리뉴얼 가이드북 제작',1],['GUI','서비스 그래픽 시스템 정비',1]] },
+];
+const AI = new Set(['Midjourney','Adobe Firefly','Magnific','Kling','Seedance','Claude','Figma Make']);
+const AI_TOOLS = ['Midjourney','Adobe Firefly','Magnific','Kling','Seedance','Claude','Figma Make','Figma','Paper','Illustrator'];
+/* Problem · Solution · Result */
+const C = {
+  mamathira:{role:'브랜드 담당 디자이너 · 패키지 100%, 사인 80%',
+    prob:'투자 대비 수익과 회수 속도가 더디던 해안 공간. 다시 찾아올 이유가 될 이야기가 필요했습니다.',
+    sol:'산토리니의 동키 택시 문화를 스토리 코어로 세우고, BI·사인·패키지·일러스트까지 전 접점을 하나의 문법으로 설계했습니다.',
+    res:[['+27%','리브랜딩 4개월 후 전년 대비 매출'],['25억 원','총 사업비 규모 공간 브랜딩'],['전 접점','BI · Sign · Package 총괄']]},
+  bhind:{role:'브랜드 디자인 리드 · 컨셉·카피·브랜딩 100%',
+    prob:'오션월드 숲속에서 쓰임을 잃은 카바나 공간. 수익을 내는 동시에 비발디파크의 시그니처가 되어야 했습니다.',
+    sol:'‘시간이 멈춘 듯한 고요함’을 브랜드 약속으로 정의하고, 네이밍·카피·워드마크·컬러·VMD까지 일관되게 설계했습니다.',
+    res:[['F&B 전환','유휴 공간의 수익형 공간화'],['100%','컨셉 기획 · 카피 · 브랜딩'],['VMD','사인 · 패키지 · 메뉴 현장 적용']]},
+  light:{role:'컨셉·카피 리드 · 전시 그래픽 80%',
+    prob:'선대 회장 추모 전시. 한 사람의 생애와 가치를 관람객의 마음에 닿는 경험으로 전해야 했습니다.',
+    sol:'빛과 불을 매개로 한 전시 컨셉과 카피를 기획하고, 파사드·심볼·사인·미디어까지 공간의 그래픽 언어를 이끌었습니다.',
+    res:[['100%','전시 컨셉 기획 · 카피라이팅'],['80%','전시 그래픽 디자인'],['4인 팀','컨셉팀 크리에이티브 리드']]},
+  cloudnine:{role:'그래픽·패키지 디자인 리드 · 100%',
+    prob:'보수적인 미학에 머문 골프 시장. 비슷한 패키지 사이에서 새 시즌을 기다리게 할 이유가 필요했습니다.',
+    sol:'Cloud Nine을 24SS 시즌 테마로 제안하고, 골프 용어를 그래픽 자산으로 만들어 패키지·골프백·굿즈로 확장했습니다.',
+    res:[['₩14억','단일 프로젝트 최대 매출'],['15,000개','시즌 누적 판매'],['3회','리오더 · 신규 컬렉션 확장']]},
+  costco:{role:'그래픽·패키지 디자인 리드 · 100%',
+    prob:'획일적인 골프 선물 패키지와 비어 있던 IP 활용. 대형 유통의 규격과 검수 기준도 통과해야 했습니다.',
+    sol:'호수와 보름달 위의 춘식이로 선물을 여는 장면을 설계하고, 코스트코 유통 구조에 맞춰 양산 사양까지 완성했습니다.',
+    res:[['₩2.97억','협업 기프트 세트 매출'],['333개','일평균 판매'],['1개월','출시 후 1만 세트 완판']]},
+  dragon:{role:'그래픽·패키지 디자인 리드 · 100%',
+    prob:'연간 동물 테마를 대표하는 신년 에디션. 반복되는 테마 속에서 그해만의 소장 가치가 필요했습니다.',
+    sol:'청룡의 상징성과 춘식이를 하나의 캐릭터로 융합하고, 시즈널리티가 선명한 컬러와 그래픽으로 에디션 가치를 높였습니다.',
+    res:[['2024','청룡의 해 신년 에디션'],['100%','캐릭터 그래픽 · 패키지'],['Seasonal','연간 동물 테마 핵심 기획']]},
+  favorite:{role:'기획·그래픽·패키지 디자인 리드 · 100%',
+    prob:'고가·소량 생산의 24FW 라인. 가격에 걸맞은 선물의 품격을 패키지로 증명해야 했습니다.',
+    sol:'골프볼과 초콜릿 볼의 닮음에서 출발해, 빈티지 필기체와 클래식 프레임으로 프리미엄 선물의 무드를 완성했습니다.',
+    res:[['24FW','하이엔드 선물 라인'],['100%','기획 · 그래픽 · 패키지'],['Typography','빈티지 필기체 시스템']]},
+  hbd:{role:'기획·그래픽·패키지 디자인 리드 · 100%',
+    prob:'썸네일로 고르고 실물로 받는 선물하기 채널. 고를 때와 받을 때, 두 번 마음을 움직여야 했습니다.',
+    sol:'Happy Birdie Day 컨셉으로 생일과 골프를 엮고, 프렌즈·볼 스탬프·카드로 이어지는 언박싱 시퀀스를 설계했습니다.',
+    res:[['₩1억 390만','선물하기 채널 매출'],['3,500개','판매 수량'],['신규 채널','선물용 패키지 시장 진입']]},
+  r3v:{role:'브랜드·패키지 디자인 리드 · 100%',
+    prob:'인지도 높은 R3 시리즈. 자산은 지키면서 정체된 판매 흐름을 리뉴얼로 반전시켜야 했습니다.',
+    sol:'춘식이 생일 넘버링과 핸즈업 퍼포먼스를 그래픽 모티브로 풀고, 로고·컬러·패키지 시스템을 현대적으로 정리했습니다.',
+    res:[['1위','패키지 전체 판매 순위'],['+22%','리뉴얼 후 판매율'],['₩2억','매출 · 6,200개 판매']]},
+  kkinilog:{role:'BX 담당 디자이너 · 브랜딩·GUI 100%',
+    prob:'번거로운 식단 기록과 딱딱한 건강 관리. AI 분석의 강점을 매일 열고 싶은 경험으로 바꿔야 했습니다.',
+    sol:'AI 데이터와 캐릭터를 결합해 BI·앱 아이콘·GUI 시스템을 구축하고, 생성형 AI로 캐릭터와 에셋 제작 공정을 설계했습니다.',
+    res:[['BI · Character','브랜드 아이덴티티 · 캐릭터'],['GUI System','파운데이션 · 컴포넌트 가이드'],['AI Workflow','생성형 AI 에셋 제작 공정']], tools:AI_TOOLS},
+  golf:{role:'BX 담당 디자이너 · 리브랜딩 100%',
+    prob:'카카오 IP에 기대 온 골프 예약 서비스. 전문 플랫폼다운 신뢰와 고유한 얼굴이 필요했습니다.',
+    sol:'IP 의존에서 벗어난 정체성을 세우고, 생성형 AI로 그래픽 탐색과 에셋 제작을 가속해 앱 아이콘과 가이드북을 완성했습니다.',
+    res:[['App Icon','로고 · 앱 아이콘 리디자인'],['Guide Book','브랜드 리뉴얼 가이드북'],['GUI','서비스 그래픽 시스템']], tools:AI_TOOLS},
+};
+const TAG = {bx:'Brand',pkg:'Package',gui:'GUI'};
+const byId = Object.fromEntries(P.map((p,i)=>[p.id,{...p,n:i+1}]));
+const pad = n => String(n).padStart(2,'0');
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tagsOf = p => p.tags.map(t=>TAG[t]).join(', ');
+const shortKo = p => p.ko.replace(/ — .*/,'');
+const chip = t => `<span class="chip${AI.has(t)?' ai':''}">${esc(t)}</span>`;
+
+/* marquee */
+const STAR='<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22M1 12h22M4.2 4.2l15.6 15.6M19.8 4.2 4.2 19.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+$('#mq').innerHTML = (`<span>From ideation</span>${STAR}<span>to creation</span>${STAR}`).repeat(4);
+
+/* filters */
+const F=[['all','All'],['bx','BX'],['pkg','PKG'],['gui','GUI']];
+const count=t=>t==='all'?P.length:P.filter(p=>p.tags.includes(t)).length;
+$('#filters').innerHTML=F.map(([k,l],i)=>`<li><button class="flt${i?'':' on'}" role="tab" aria-selected="${!i}" data-f="${k}">${l}<sup class="num">${count(k)}</sup></button></li>`).join('');
+
+/* grid + list */
+$('#wall').innerHTML=P.map(p=>`
+  <button class="tile rv" type="button" data-id="${p.id}" data-tags="${p.tags.join(' ')}" aria-label="${esc(p.en)} 자세히 보기">
+    <span class="tile-fig"><img src="img/${MANIFEST[p.id].cover_p}" width="480" height="720" alt="" loading="lazy"><span class="btn sm">자세히 보기</span></span>
+    <span class="tile-cap"><span class="t">${esc(p.en)}</span><span class="cap num">${tagsOf(p)} · ${p.year}</span></span>
+  </button>`).join('');
+$('#list').innerHTML=P.map((p,i)=>`
+  <li data-tags="${p.tags.join(' ')}"><button class="lrow" type="button" data-id="${p.id}">
+    <img src="img/${MANIFEST[p.id].cover_p}" width="480" height="720" alt="" loading="lazy">
+    <span class="i num">${pad(i+1)}</span>
+    <span class="t">${esc(p.en)}<span>${esc(shortKo(p))}</span></span>
+    <span class="m small num">${tagsOf(p)}<br>${p.year}</span>
+    <span class="go" aria-hidden="true">›</span>
+  </button></li>`).join('');
+
+let curView='grid'; // 'grid' or 'list'
+function applyFilter(f){
+  // wall tiles
+  $$('#wall [data-tags]').forEach(el=>{ el.hidden = f!=='all' && !el.dataset.tags.split(' ').includes(f); });
+  // list items
+  $$('#list [data-tags]').forEach(el=>{ el.hidden = f!=='all' && !el.dataset.tags.split(' ').includes(f); });
+  // keep wall/list visibility based on current view
+  $('#wall').hidden = curView==='list';
+  $('#list').hidden = curView==='grid';
+}
+$('#filters').addEventListener('click',e=>{
+  const b=e.target.closest('.flt'); if(!b) return; const f=b.dataset.f;
+  $$('.flt').forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b);});
+  applyFilter(f);
+});
+document.querySelector('.side .seg').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  $$('.side .seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  curView=b.dataset.view==='list'?'list':'grid';
+  const f=document.querySelector('.flt.on')?.dataset.f||'all';
+  applyFilter(f);
+});
+document.addEventListener('click',e=>{ const t=e.target.closest('.tile,.lrow'); if(t) openP(t.dataset.id); });
+
+/* sheet */
+const sheet=$('#sheet'); let lastFocus=null, curP=0, curS=0;
+const fullTools = p => p.tools.split(/,\s*/).map(t=>({Ai:'Illustrator',Ps:'Photoshop',Id:'InDesign'}[t]||t));
+function renderP(p){
+  const m=MANIFEST[p.id], c=C[p.id], nx=P[p.n%P.length];
+  /* every PDF page of the project, in order: master view first (full ratio), then pages in pairs */
+  const imgs=m.gal2, restN=imgs.length-1, oddLast=restN%2===1;
+  const gal=imgs.map(([f,w,h],i)=>{
+    const cls=i===0?'full':(oddLast&&i===imgs.length-1?'full':'');
+    return `<figure class="rv ${cls}"><img src="img/${f}" width="${w}" height="${h}" alt="${esc(p.en)} 작업 이미지 ${i+1}" loading="lazy" decoding="async"></figure>`;}).join('');
+  const tools=c.tools||fullTools(p);
+  return `
+  <div class="wrap sh-body">
+    <div class="sh-head"><span class="eyebrow"><i class="mark"></i>${esc(p.cat)}</span><h2 id="shTitle">${esc(p.en)}</h2><p class="sub">${esc(p.ko)}</p></div>
+    <dl class="facts num">
+      <div><dt class="cap">Company</dt><dd>${esc(p.client.replace(' × 코스트코',''))}</dd></div>
+      <div><dt class="cap">Period</dt><dd>${esc(p.period)}</dd></div>
+      <div><dt class="cap">Role</dt><dd>${esc(c.role)}</dd></div>
+      <div class="tools"><dt class="cap">Tools</dt><dd>${tools.map(chip).join('')}</dd></div>
+    </dl>
+    <div class="steps">
+      <section class="step rv"><p class="lb"><span class="no num">01</span>배경과 과제</p><p>${esc(c.prob)}</p></section>
+      <section class="step rv"><p class="lb"><span class="no num">02</span>해결 과정</p><p>${esc(c.sol)}</p></section>
+      <section class="step res rv"><p class="lb"><span class="no num">03</span>비즈니스 성과</p><ul class="mets num">${c.res.map(([n,k])=>`<li><b>${esc(n)}</b><span>${esc(k)}</span></li>`).join('')}</ul></section>
+    </div>
+    <div class="gal">${gal}</div>
+    <div class="next">
+      <div><span class="eyebrow">Next project</span><p class="t">${esc(nx.en)}<span>${esc(shortKo(nx))}</span></p></div>
+      <div class="acts"><button class="btn ghost" type="button" data-close>목록으로</button><button class="btn primary" type="button" data-next="${nx.id}">다음 프로젝트 <span class="ic r">›</span></button></div>
+    </div>
+  </div>`;
+}
+function openP(id,fromHash){
+  const p=byId[id]; if(!p) return;
+  if(!sheet.classList.contains('open')) lastFocus=document.activeElement;
+  $('#shIdx').textContent=`${pad(p.n)} / ${pad(P.length)}`;
+  $('#shTtl').textContent=p.en;
+  $('#shContent').innerHTML=renderP(p); curP=p.n; setIdx(p.n,P.length);
+  sheet.scrollTop=0; sheet.classList.add('open'); sheet.setAttribute('aria-hidden','false');
+  document.documentElement.style.overflow='hidden';
+  observe(sheet.querySelectorAll('.rv'),sheet); onSheetScroll();
+  if(!fromHash&&location.hash!=='#'+id){try{history.pushState(null,'','#'+id);}catch(_){location.hash=id;}}
+  setTimeout(()=>$('#shClose').focus({preventScroll:true}),60);
+}
+function closeP(fromHash){
+  if(!sheet.classList.contains('open')) return;
+  sheet.classList.remove('open'); sheet.setAttribute('aria-hidden','true');
+  document.documentElement.style.overflow=''; curP=0; onScroll();
+  if(!fromHash){try{history.replaceState(null,'',location.pathname+location.search);}catch(_){}}
+  if(lastFocus) lastFocus.focus({preventScroll:true});
+}
+$('#shClose').onclick=()=>closeP();
+sheet.addEventListener('click',e=>{const a=e.target.closest('[data-next]'); if(a){openP(a.dataset.next);} if(e.target.closest('[data-close]')) closeP();});
+document.addEventListener('keydown',e=>{if(e.key!=='Escape') return; if(menu.classList.contains('open')) setMenu(false); else closeP();});
+const fromHash=()=>{const h=location.hash.slice(1); if(byId[h]) openP(h,true); else closeP(true);};
+addEventListener('hashchange',fromHash); addEventListener('popstate',fromHash);
+
+/* reveal */
+function observe(els,root){
+  if(!('IntersectionObserver' in window)){els.forEach(el=>el.classList.add('in'));return;}
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{root:root||null,rootMargin:'0px 0px -6% 0px',threshold:0.05});
+  els.forEach(el=>io.observe(el));
+}
+observe($$('main .rv'));
+setTimeout(()=>$$('.rv').forEach(el=>{const r=el.getBoundingClientRect(); if(r.top<innerHeight) el.classList.add('in');}),1200);
+
+/* header, progress */
+const prog=$('#prog'), shProg=$('#shProg'); const secs=$$('main > [data-sec]');
+function onScroll(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  prog.style.transform=`scaleX(${max>0?Math.min(1,scrollY/max):0})`;
+  const y=scrollY+innerHeight*0.4; let c=0; secs.forEach((s,i)=>{if(s.offsetTop<=y)c=i;}); curS=c; if(!curP) setIdx(c+1,secs.length);
+  $$('.nav a.t').forEach(a=>a.classList.toggle('on',a.dataset.sec===secs[c].dataset.sec));
+}
+function onSheetScroll(){ const max=sheet.scrollHeight-sheet.clientHeight; shProg.style.transform=`scaleX(${max>0?Math.min(1,sheet.scrollTop/max):0})`; }
+addEventListener('scroll',onScroll,{passive:true}); addEventListener('resize',onScroll); onScroll();
+sheet.addEventListener('scroll',onSheetScroll,{passive:true});
+if(byId[location.hash.slice(1)]) openP(location.hash.slice(1),true);
+
+/* index control: sections on the page, projects inside the sheet */
+function setIdx(c,t){ $('#idxC').textContent=pad(c); $('#idxT').textContent=pad(t); }
+const step=d=>{
+  if(curP){ const n=(curP-1+d+P.length)%P.length; openP(P[n].id); return; }
+  const i=Math.max(0,Math.min(secs.length-1,curS+d)); scrollTo({top:secs[i].offsetTop-(i?56:0),behavior:'smooth'});
+};
+$('#idxUp').onclick=()=>step(-1); $('#idxDn').onclick=()=>step(1);
+
+/* menu */
+const menu=$('#menu'), menuBt=$('#menuBt');
+function setMenu(on){
+  menu.classList.toggle('open',on); menu.setAttribute('aria-hidden',!on); menuBt.setAttribute('aria-expanded',on);
+  document.documentElement.style.overflow=on?'hidden':(curP?'hidden':'');
+  setTimeout(()=>(on?$('#menuX'):menuBt).focus({preventScroll:true}),50);
+}
+menuBt.onclick=()=>setMenu(true); $('#menuX').onclick=()=>setMenu(false);
+menu.addEventListener('click',e=>{ if(e.target.closest('[data-go]')){ closeP(); setMenu(false); } });
+
+/* PDF: inside the claude.ai viewer use the downloads capability; elsewhere the plain link works */
+let dl=null; if(window.claude&&claude.use) claude.use('downloads').then(n=>{dl=n;}).catch(()=>{});
+$('#pdfBt').addEventListener('click',async e=>{
+  if(!dl) return;
+  e.preventDefault(); const b=e.currentTarget, lab=b.innerHTML;
+  try{ b.textContent='준비 중…'; const blob=await (await fetch('kimyeadarm-portfolio.pdf')).blob(); await dl.save({filename:'김예닮_포트폴리오.pdf',data:blob}); }
+  catch(err){ if(err&&err.code&&!['declined','rate_limited'].includes(err.code)) location.href='kimyeadarm-portfolio.pdf'; }
+  finally{ b.innerHTML=lab; }
+});
+
+/* copy */
+$('#copyMail').onclick=async e=>{
+  const b=e.currentTarget, t=$('#mail').textContent;
+  try{await navigator.clipboard.writeText(t); b.textContent='복사되었습니다';}
+  catch(_){const r=document.createRange(); r.selectNodeContents($('#mail')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='주소를 선택했습니다';}
+  setTimeout(()=>b.textContent='이메일 복사',1800);
+};
+})();
+</script>
